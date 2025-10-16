@@ -1,6 +1,6 @@
 # <a href="https://www.linkedin.com/in/d-a-c-136020286/">Danny A Cologero</a>'s IT and Cybersecurity Project Portfolio 🔐
 
-I'm passionate about cybersecurity and love tackling complex challenges through hands-on projects. From vulnerability management to threat detection, these projects allow me to dive deep into the ever-evolving landscape of cybersecurity. Please feel free to check them out and see the work I’ve put into enhancing security operations and processes!
+Welcome to my project portfolio. Here you’ll find hands-on security projects demonstrating skills I’ve built through learning, experimentation, and tackling complex challenges. Projects are updated regularly as I expand my expertise.
 
 
 ## ⚠️ Vulnerability Management Projects

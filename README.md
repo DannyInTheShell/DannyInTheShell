@@ -13,8 +13,30 @@
   <img src="https://readme-typing-svg.demolab.com?font=Anonymous+Pro&size=40&pause=1200&color=CCCCCC&center=true&vCenter=true&width=980&height=80&duration=1900&lines=danny.cologero;cybersecurity;threats+contained" alt="Covert ops — Danny Cologero" />
 </h1>
 
+<!-- Clean government-briefing tone -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=36&duration=2100&pause=900&color=E6E6E6&center=true&vCenter=true&width=1100&height=80&background=000000&lines=NATION+STATE+READINESS;DANNY+COLOGERO;DEFENSE+IN+DEPTH+%7C+TENABLE+%7C+AZURE+%7C+SENTINEL;THREATS+NEUTRALIZED" alt="Nation state header" />
+</h1>
 
 
+
+
+
+
+
+
+
+
+
+</div>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
 
 
 

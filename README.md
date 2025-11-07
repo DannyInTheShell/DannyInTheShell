@@ -26,6 +26,10 @@ Cybersecurity is where I feel most at home. I strive to combine technical skills
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
 
+## ⚖️ GRC Audits and Compliance
+
+- **[PCI DSS and GDPR Readiness Audit]()**
+
 <hr/>
 
 ## 🤳 Connect With Me

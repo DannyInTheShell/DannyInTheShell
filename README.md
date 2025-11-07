@@ -1,3 +1,23 @@
+<!-- C) Ghost operator — stealth cyan -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=OCR+A+Extended&size=38&pause=1100&color=00E7FF&center=true&vCenter=true&width=1000&height=80&duration=2300&lines=OPERATOR%3A+DANNY+COLOGERO;CREDENTIALS%3A+VERIFIED;OBJECTIVE%3A+REDUCE+RISK;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT" alt="Operator — Danny Cologero" />
+</h1>
+
+<!-- F) Red team scanner — warning red, flips to green -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=40&pause=800&color=FF0040&center=true&vCenter=true&width=1050&height=90&duration=1800&lines=SCANNING...;ENUMERATING+ASSETS...;ACCESS+GRANTED;DANNY+COLOGERO+%7C+CYBERSECURITY" alt="Red team scan — Danny Cologero" />
+</h1>
+
+<!-- J) Covert ops — monochrome minimal -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Anonymous+Pro&size=40&pause=1200&color=CCCCCC&center=true&vCenter=true&width=980&height=80&duration=1900&lines=danny.cologero;cybersecurity;threats+contained" alt="Covert ops — Danny Cologero" />
+</h1>
+
+
+
+
+
+
 # <a href="https://www.linkedin.com/in/d-a-c-136020286/">Danny A Cologero</a>'s IT and Cybersecurity Project Portfolio 🔐
 
 Welcome to my project portfolio. Here you'll find hands-on security projects that demonstrate skills built through learning, experimentation, and real problem solving. I update projects regularly as I expand my expertise.

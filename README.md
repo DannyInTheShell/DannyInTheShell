@@ -1,13 +1,3 @@
-<h1 align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&pause=900&color=00FF7F&center=true&vCenter=true&width=1000&lines=Danny+C%20|%20Cybersecurity;Vulnerability+Management%20•%20Azure%20•%20SOC;Protect%20•%20Learn%20•%20Adapt"
-    alt="Danny C | Cybersecurity typing banner"
-  />
-</h1>
-
-
-
-
 # <a href="https://www.linkedin.com/in/d-a-c-136020286/">Danny A Cologero</a>'s IT and Cybersecurity Project Portfolio 🔐
 
 Welcome to my project portfolio. Here you'll find hands-on security projects that demonstrate skills built through learning, experimentation, and real problem solving. I update projects regularly as I expand my expertise.

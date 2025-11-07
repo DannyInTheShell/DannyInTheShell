@@ -1,21 +1,22 @@
 # <a href="https://www.linkedin.com/in/d-a-c-136020286/">Danny A Cologero</a>'s IT and Cybersecurity Project Portfolio 🔐
 
-Welcome to my project portfolio. Here you’ll find hands-on security projects demonstrating skills I’ve built through learning, experimentation, and tackling complex challenges. Projects are updated regularly as I expand my expertise.
+Welcome to my project portfolio. Here you'll find hands-on security projects that demonstrate skills built through learning, experimentation, and real problem solving. I update projects regularly as I expand my expertise.
 
 ## About Me
 
-I bring over 20 years of professional experience, a relentless curiosity, and a passion for solving problems creatively. I thrive on challenges, diving in wide-eyed, mastering the unknown, and emerging like a Viking Jedi Master 🛡️⚔️ with a cape of technical expertise and Kamado Joe for fuel and inspiration.
+I bring two decades of diverse work experience, a relentless curiosity, and a passion for creative problem solving. I thrive on tough challenges, dive in, learn fast, and ship repeatable solutions. Cybersecurity is where I feel most at home: protect, learn, adapt, and help people stay safe.
 
-### My experience spans:
+*A little flavor:* Viking Jedi energy 🛡️⚔️ with a cape of technical expertise and a Kamado Joe for fuel and inspiration.
 
-- 👥 Leading and training teams across technical and operational domains
-- 🖥️ Troubleshooting and resolving complex IT issues (Layer 8…)
-- ⚙️ Automating workflows, scripting solutions, and securing systems
-- 🔐 Managing vulnerabilities with Tenable and hardening cloud infrastructure in Azure ☁️
-- 🛡️ Physical security work for events and individuals, keeping people and things safe, sometimes unnoticed but always effective
+### Experience highlights
 
-Cybersecurity is where I feel most at home. I strive to combine technical skills, strategic thinking, and a commitment to protecting people and systems. I approach cybersecurity with the same mindset I’ve had since childhood: protect, learn, adapt, and help people stay safe, whether they realize it or not.
+- 👥 Leading and training teams across technical and operational domains  
+- 🖥️ Troubleshooting and resolving complex IT issues (Layer 8...)  
+- ⚙️ Automating workflows, scripting solutions, and securing systems  
+- 🔐 Managing vulnerabilities with Tenable and hardening cloud infrastructure in Azure ☁️  
+- 🛡️ Physical security for events and individuals, keeping people and assets safe
 
+Welcome to my project portfolio. Here you’ll find hands-on security projects demonstrating skills I’ve built through learning, experimentation, and tackling complex challenges. Projects are updated regularly as I expand my expertise.
 
 ## ⚠️ Vulnerability Management Projects
 

@@ -32,8 +32,8 @@ Cybersecurity is where I feel most at home. I strive to combine technical skills
 
 ## 🔵 Blue Team Investigations
 
-- **[Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
-- **[Incident Report: SYN Flood[()
+- **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
+- **[Incident Report: TCP SYN Flood DoS](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20SYN%20Flood.md)**
   
 <hr/>
 

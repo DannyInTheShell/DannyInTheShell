@@ -1,4 +1,4 @@
-# Incident Report Analysis - NIST CSF
+# Incident Report: ICMP Flood and NIST CSF Playbook
 
 ## Summary  
 The organization recently experienced a security incident where an ICMP flood attack disrupted internal network services. The attack caused a temporary outage, preventing normal traffic from accessing network resources. Our incident management team responded by blocking the incoming flood, stopping all non-critical network services, and restoring critical network services. Moving forward, security enhancements have been implemented to prevent similar attacks, including improved firewall rules, IDS/IPS deployment, and enhanced monitoring.  

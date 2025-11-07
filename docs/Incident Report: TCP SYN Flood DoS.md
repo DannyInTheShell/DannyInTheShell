@@ -1,4 +1,4 @@
-# Cybersecurity Incident Report: SYN Flood
+# Cybersecurity Incident Report: TCP SYN Flood DoS
 
 ## Summary
 One potential explanation for the website's connection timeout error message is a DoS Attack. The logs show that many TCP SYN requests come from an unfamiliar IP address. The web server appears to be overwhelmed by the volume of incoming traffic and is losing its ability to respond to the abnormally large number of SYN requests. This event is likely a type of DoS Attack called a SYN Flood.

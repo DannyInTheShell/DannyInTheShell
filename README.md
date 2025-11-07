@@ -1,22 +1,8 @@
-<!-- C) Ghost operator — stealth cyan -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=OCR+A+Extended&size=38&pause=1100&color=00E7FF&center=true&vCenter=true&width=1000&height=80&duration=2300&lines=OPERATOR%3A+DANNY+COLOGERO;CREDENTIALS%3A+VERIFIED;OBJECTIVE%3A+REDUCE+RISK;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT" alt="Operator — Danny Cologero" />
-</h1>
-
-<!-- F) Red team scanner — warning red, flips to green -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=40&pause=800&color=FF0040&center=true&vCenter=true&width=1050&height=90&duration=1800&lines=SCANNING...;ENUMERATING+ASSETS...;ACCESS+GRANTED;DANNY+COLOGERO+%7C+CYBERSECURITY" alt="Red team scan — Danny Cologero" />
-</h1>
-
-<!-- J) Covert ops — monochrome minimal -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Anonymous+Pro&size=40&pause=1200&color=CCCCCC&center=true&vCenter=true&width=980&height=80&duration=1900&lines=danny.cologero;cybersecurity;threats+contained" alt="Covert ops — Danny Cologero" />
-</h1>
-
-<!-- Clean government-briefing tone -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=36&duration=2100&pause=900&color=E6E6E6&center=true&vCenter=true&width=1100&height=80&background=000000&lines=NATION+STATE+READINESS;DANNY+COLOGERO;DEFENSE+IN+DEPTH+%7C+TENABLE+%7C+AZURE+%7C+SENTINEL;THREATS+NEUTRALIZED" alt="Nation state header" />
-</h1>
+<!-- Matrix banner (local) + combined sequence (logical order) -->
+<div align="center">
+  <img src="./assets/matrix-banner.gif" width="100%" alt="Matrix digital rain" loading="lazy" />
+  <img src="https://readme-typing-svg.demolab.com?font=OCR+A+Extended&size=38&duration=2100&pause=950&color=00E7FF&center=true&vCenter=true&width=1100&height=90&background=00000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+REDUCE+RISK;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+COLOGERO+%7C+CYBERSECURITY" alt="Danny Cologero — Cybersecurity header" />
+</div>
 
 
 

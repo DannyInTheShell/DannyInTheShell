@@ -28,7 +28,7 @@ Cybersecurity is where I feel most at home. I strive to combine technical skills
 
 ## ⚖️ GRC Audits and Compliance
 
-- **[PCI DSS and GDPR Readiness Audit]()**
+- **[PCI DSS and GDPR Readiness Audit](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
 
 <hr/>
 

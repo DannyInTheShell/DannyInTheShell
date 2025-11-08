@@ -1,7 +1,14 @@
 <!-- Matrix banner (local) + combined sequence (logical order) -->
 <div align="center">
   <img src="./assets/Matrix_Digital_rain_banner.gif" width="100%" alt="Matrix digital rain" loading="lazy" />
-  <img src="https://readme-typing-svg.demolab.com?font=OCR+A+Extended&size=38&duration=2100&pause=950&color=00E7FF&center=true&vCenter=true&width=1100&height=90&background=00000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+REDUCE+RISK;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+COLOGERO+%7C+CYBERSECURITY" alt="Danny Cologero — Cybersecurity header" />
+
+  <!-- Cyberpunk header: black bg, dark blue text -->
+  <h1 align="center">
+    <img
+      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=42&duration=2100&pause=950&color=1E3A8A&center=true&vCenter=true&width=1200&height=90&background=000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+A+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+MINIMIZE+BLAST+RADIUS;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+A+COLOGERO+%7C+MINIMIZE+BLAST+RADIUS"
+      alt="Danny A Cologero — Cybersecurity header"
+    />
+  </h1>
 </div>
 
 
@@ -13,8 +20,6 @@
 
 
 
-
-</div>
 
 <div align="center">
   <picture>

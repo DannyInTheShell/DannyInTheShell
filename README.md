@@ -102,7 +102,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Analyzes Kaggle based Spotify track data by modeling audio features in a relational table and using GROUP BY aggregates, CTEs, subqueries, and calculated fields to rank artists by popularity, danceability, and track length.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Superstore%20Database">Superstore Database</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: sales pipeline, margins, regional performance.</i></sub>
+  <br/><sub><i>Models a retail Superstore inventory table and uses GROUP BY aggregates, summary statistics, and filtered queries to analyze stock levels, pricing, and product ratings by category.</i></sub>
 
 <br/>
 

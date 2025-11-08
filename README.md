@@ -22,6 +22,11 @@
 </h1>
 
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=DannyInTheShell&label=TRAFFIC&color=0969DA&style=for-the-badge" alt="Visitors" />
+</p>
+
+
 <div align="center">
   <h2>Cybersecurity &amp; IT Project Portfolio</h2>
 </div>

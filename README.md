@@ -96,7 +96,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Explores Netflix catalog data in PostgreSQL using joins on show_id, filters by type and rating, date functions, ordering, and a subquery to identify counts, recency of additions, and the oldest titles in the dataset.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/SQL%20Murder%20Mystery%20Solved">SQL Murder Mystery Solved</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: investigative querying, stepwise evidence queries.</i></sub>
+  <br/><sub><i>Solves the SQL Murder Mystery case using text pattern searches, multi table joins across interview, person, license, gym, and event tables, and targeted filters on dates and attributes to identify the killer, Jeremy Bowers, and the wealthy mastermind who hired him.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Spotify%20Analytics">Spotify Analytics</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: playlist trends, popularity scoring, joins.</i></sub>

@@ -74,7 +74,10 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 </details>
 
 <details>
-  <summary><b>🔵 Blue Team Investigations</b> <sub>(click to expand)</sub></summary>
+  <summary>
+    <b>🔵 Blue Team Investigations</b> <sub>(click to expand)</sub><br/>
+    <sub>Investigations focused on network attacks, log analysis, and incident reporting, with an emphasis on practical detection, triage, and response.</sub>
+  </summary>
 
 - **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
   <br/><sub><i>Insert Discription</i></sub>

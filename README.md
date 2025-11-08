@@ -93,7 +93,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Evaluates Fortune 500 style companies for work life balance using custom table modeling, GROUP BY and HAVING aggregates, and CASE expressions to rank industries and mother friendly employers by benefits, tenure, and revenue.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Netflix%20Analysis%20Project%20(PostgreSQL)">Netflix Analysis Project (PostgreSQL)</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: content mix, time series, window functions.</i></sub>
+  <br/><sub><i>Explores Netflix catalog data in PostgreSQL using joins on show_id, filters by type and rating, date functions, ordering, and a subquery to identify counts, recency of additions, and the oldest titles in the dataset.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/SQL%20Murder%20Mystery%20Solved">SQL Murder Mystery Solved</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: investigative querying, stepwise evidence queries.</i></sub>

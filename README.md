@@ -58,35 +58,20 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
 </details>
 
-## 🚨 Threat Hunting and Security Operations
-
-- **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
-
 <details>
   <summary><b>⚖️ GRC Audits and Compliance</b></summary>
 
-- **[PCI DSS and GDPR Readiness Audit](docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
-</details>
-
-## ⚖️ GRC Audits and Compliance
-
 - **[PCI DSS and GDPR Readiness Audit](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
-
+</details>
 
 <details>
   <summary><b>🔵 Blue Team Investigations</b></summary>
 
-- **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
-- **[Incident Report: TCP SYN Flood DoS](docs/Incident%20Report%3A%20SYN%20Flood.md)**
-- **[Incident Report: ICMP Flood and NIST CSF Playbook](docs/Incident%20Report%3A%20ICMP%20Flood%20and%20NIST%20CSF%20Playbook.md)**
-</details>
-
-## 🔵 Blue Team Investigations
-
 - **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
 - **[Incident Report: TCP SYN Flood DoS](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20SYN%20Flood.md)**
 - **[Incident Report: ICMP Flood and NIST CSF Playbook](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20ICMP%20Flood%20and%20NIST%20CSF%20Playbook.md)**
-  
+</details>
+
 <hr/>
 
 ## 🤳 Connect With Me

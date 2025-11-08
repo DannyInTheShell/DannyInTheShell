@@ -77,6 +77,12 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 - **[Incident Report: ICMP Flood and NIST CSF Playbook](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20ICMP%20Flood%20and%20NIST%20CSF%20Playbook.md)**
 </details>
 
+<details>
+  <summary><b>SQL</b></summary>
+
+- **[SQL]()**
+</details>
+
 <hr/>
 
 ## 🤳 Connect With Me

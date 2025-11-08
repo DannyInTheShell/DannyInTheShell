@@ -78,7 +78,10 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 </details>
 
 <details>
-  <summary><b>🗄️ SQL Projects</b> <sub>(click to expand)</sub></summary>
+  <summary>
+    <b>🗄️ SQL Projects</b> <sub>(click to expand)</sub><br/>
+    <sub>Hands-on SQL across real datasets using joins, aggregates, CTEs, and CASE logic for business-focused analysis.</sub>
+  </summary>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Chinook%20SQL%20Project">Chinook SQL Project</a>**
   <br/><sub><i>Analyzes a digital music store’s customers, artists, and sales agents using multi-table INNER JOINs, GROUP BY aggregates, and a ROW_NUMBER window function to surface top-selling artists, countries, and 2009 performance.</i></sub>

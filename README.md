@@ -106,8 +106,8 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 
 <br/>
 
-🔎 <a href="https://github.com/DannyInTheShell/SQL/search?type=code&q=path%3A%2A.sql">Browse all .sql files</a>
-
+🔎 <a href="https://github.com/DannyInTheShell/SQL">Browse all .sql files</a>
+/search?type=code&q=path%3A%2A.sql
 </details>
 
 

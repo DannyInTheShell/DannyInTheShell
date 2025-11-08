@@ -11,26 +11,6 @@
   </h1>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
-
-
-
 # <a href="https://www.linkedin.com/in/d-a-c-136020286/">Danny A Cologero</a>'s IT and Cybersecurity Project Portfolio 🔐
 
 Welcome to my project portfolio. Here you'll find hands-on security projects that demonstrate skills built through learning, experimentation, and real problem solving. I update projects regularly as I expand my expertise.

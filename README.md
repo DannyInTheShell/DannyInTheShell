@@ -5,7 +5,7 @@
   <!-- Cyberpunk header: black bg, dark blue text -->
   <h1 align="center">
     <img
-      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=42&duration=2100&pause=950&color=0969DA&center=true&vCenter=true&width=1200&height=90&background=000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+A+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+MINIMIZE+BLAST+RADIUS;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+A+COLOGERO+%7C+MINIMIZE+BLAST+RADIUS"
+      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=44&duration=2100&pause=950&color=0969DA&center=true&vCenter=true&width=1200&height=90&background=000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+A+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+MINIMIZE+BLAST+RADIUS;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+A+COLOGERO+%7C+MINIMIZE+BLAST+RADIUS"
       alt="Danny A Cologero — Cybersecurity header"
     />
   </h1>
@@ -15,7 +15,7 @@
 <h1 align="center">
   <a href="https://www.linkedin.com/in/d-a-c-136020286/">
     <img
-      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=44&duration=1200&pause=9999999&color=0A66C2&center=true&vCenter=true&width=700&height=70&background=00000000&lines=DANNY+A+COLOGERO"
+      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=40&duration=1200&pause=9999999&color=0A66C2&center=true&vCenter=true&width=700&height=70&background=00000000&lines=DANNY+A+COLOGERO"
       alt="DANNY A COLOGERO — LinkedIn"
     />
   </a>

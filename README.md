@@ -51,26 +51,26 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 ---
 
 <details open>
-  <summary><b>⚠️ Vulnerability Management Projects</b></summary>
+  <summary><b>⚠️ Vulnerability Management Projects</b> <sub>(click to expand)</sub></summary>
 
 - **[Vulnerability Management Program Implementation](https://github.com/DannyInTheShell/vulnerability-management-program/blob/main/README.md)**
 - **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
 </details>
 
 <details>
-  <summary><b>🚨 Threat Hunting and Security Operations</b></summary>
+  <summary><b>🚨 Threat Hunting and Security Operations</b> <sub>(click to expand)</sub></summary>
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
 </details>
 
 <details>
-  <summary><b>⚖️ GRC Audits and Compliance</b></summary>
+  <summary><b>⚖️ GRC Audits and Compliance</b> <sub>(click to expand)</sub></summary>
 
 - **[PCI DSS and GDPR Readiness Audit](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
 </details>
 
 <details>
-  <summary><b>🔵 Blue Team Investigations</b></summary>
+  <summary><b>🔵 Blue Team Investigations</b> <sub>(click to expand)</sub></summary>
 
 - **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
 - **[Incident Report: TCP SYN Flood DoS](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20SYN%20Flood.md)**
@@ -78,10 +78,39 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 </details>
 
 <details>
-  <summary><b>SQL</b></summary>
+  <summary><b>🗄️ SQL Projects</b> <sub>(click to expand)</sub></summary>
 
-- **[SQL]()**
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Chinook%20SQL%20Project">Chinook SQL Project</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: music store schema, joins, window functions, KPIs.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Customer%20%26%20Order%20Analytics">Customer &amp; Order Analytics</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: cohort analysis, retention, CLV with CTEs.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Famous%20People%20Project">Famous People Project</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: data cleaning, normalization, referential integrity.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Fortune%20500%20Project">Fortune 500 Project</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: ranking, percentiles, industry aggregates.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Netflix%20Analysis%20Project%20(PostgreSQL)">Netflix Analysis Project (PostgreSQL)</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: content mix, time series, window functions.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/SQL%20Murder%20Mystery%20Solved">SQL Murder Mystery Solved</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: investigative querying, stepwise evidence queries.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Spotify%20Analytics">Spotify Analytics</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: playlist trends, popularity scoring, joins.</i></sub>
+
+- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Superstore%20Database">Superstore Database</a>
+  <br/><sub><i>Brief description (1–2 lines). Example: sales pipeline, margins, regional performance.</i></sub>
+
+<br/>
+
+🔎 <a href="https://github.com/DannyInTheShell/SQL/search?q=extension%3Asql&type=code">Browse all .sql files</a>
 </details>
+
+
+
 
 <hr/>
 

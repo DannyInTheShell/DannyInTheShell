@@ -70,7 +70,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <summary><b>⚖️ GRC Audits and Compliance</b> <sub>(click to expand)</sub></summary>
 
 - **[PCI DSS and GDPR Readiness Audit](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
-  <br/><sub><i>Insert Discription</i></sub>
+  <br/><sub><i>Performs a readiness assessment for a fictional e-commerce retailer, mapping PCI DSS and GDPR requirements to existing controls, identifying gaps, and recommending remediation steps</i></sub>
 </details>
 
 <details>

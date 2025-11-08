@@ -51,7 +51,10 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 ---
 
 <details open>
-  <summary><b>⚠️ Vulnerability Management Projects</b> <sub>(click to expand)</sub></summary>  
+  <summary>
+    <b>⚠️ Vulnerability Management Projects</b> <sub>(click to expand)</sub><br/>
+    <sub>Vulnerability management projects focused on turning scan data into prioritized findings, tracked remediation, and repeatable workflows.</sub>
+  </summary>  
 
 - **[Vulnerability Management Program Implementation](https://github.com/DannyInTheShell/vulnerability-management-program/blob/main/README.md)**
   <br/><sub><i>End-to-end vulnerability management program simulating a 200-server Azure environment, using Tenable for authenticated scanning, risk-based prioritization, and scripted remediation, from policy design and stakeholder buy-in through to execution.</i></sub>

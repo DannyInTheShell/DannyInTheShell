@@ -90,7 +90,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Models biographical and career data for public figures, then uses table creation, joins, calculated columns, and filters on status to compare net worth, yearly earnings, and estimated future returns.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Fortune%20500%20Project">Fortune 500 Project</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: ranking, percentiles, industry aggregates.</i></sub>
+  <br/><sub><i>Evaluates Fortune 500 style companies for work life balance using custom table modeling, GROUP BY and HAVING aggregates, and CASE expressions to rank industries and mother friendly employers by benefits, tenure, and revenue.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Netflix%20Analysis%20Project%20(PostgreSQL)">Netflix Analysis Project (PostgreSQL)</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: content mix, time series, window functions.</i></sub>

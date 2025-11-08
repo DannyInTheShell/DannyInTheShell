@@ -80,11 +80,11 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   </summary>
 
 - **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
-  <br/><sub><i>Insert Discription</i></sub>
+  <br/><sub><i>Investigates a DNS resolution outage by reviewing network traffic and logs to identify the root cause and recommend remediation.</i></sub>
 - **[Incident Report: TCP SYN Flood DoS](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20SYN%20Flood.md)**
-  <br/><sub><i>Insert Discription</i></sub>
+  <br/><sub><i>Analyzes a TCP SYN flood denial of service scenario, highlighting traffic patterns, impact, and defensive actions to restore availability.</i></sub>
 - **[Incident Report: ICMP Flood and NIST CSF Playbook](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20ICMP%20Flood%20and%20NIST%20CSF%20Playbook.md)**
-  <br/><sub><i>Insert Discription</i></sub>
+  <br/><sub><i>Examines an ICMP flood attack and maps detection, response, and recovery steps into a reusable playbook aligned with NIST CSF functions.</i></sub>
 - **[Apply Filters to SQL Log Analysis](https://github.com/DannyInTheShell/SQL/blob/main/apply-filters-sql-log-analysis.pdf)**  
   <sub><i>Uses SQL WHERE filtering with AND, OR, NOT, and LIKE against login and employee tables to investigate suspicious access activity.</i></sub>
 </details>

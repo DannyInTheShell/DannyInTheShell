@@ -134,6 +134,17 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 
 </details>
 
+<details>
+  <summary>
+    <b>🔍 Security Technology &amp; Vendor Assessments</b> <sub>(click to expand)</sub><br/>
+    <sub>Evaluations of security products and platforms for architecture, controls, and operational fit.</sub>
+  </summary>
+
+- **[Security Technology Assessment – Verkada Camera Platform](./docs/verkada-security-technology-assessment.md)**
+  <br/><sub><i>Independent assessment of the Verkada camera platform reviewing architecture, security controls, compliance posture, and suitability for a remote monitoring program.</i></sub>
+
+</details>
+
 
 <hr/>
 

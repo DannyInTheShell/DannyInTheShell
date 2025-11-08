@@ -119,6 +119,14 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 🔎 <a href="https://github.com/DannyInTheShell/SQL/find/main?q=.sql">Browse all .sql files</a>
 </details>
 
+<details>
+  <summary><b>🧩 Scripts, CTF &amp; Forensics Utilities</b> <sub>(click to expand)</sub></summary>
+
+- **[extract-ctf-flag.sh](./misc_scripts/extract-ctf-flag.sh)**
+  <br/><sub><i>Bash utility that extracts CTF flags from ASCII-art bubbles using grep/tr pipelines, with image mode (icat) and text file mode.</i></sub>
+
+</details>
+
 
 <hr/>
 

@@ -62,7 +62,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 <details>
   <summary>
     <b>🚨 Threat Hunting and Security Operations</b> <sub>(click to expand)</sub><br/>
-    <sub>> Threat hunting and security operations labs focused on log analysis, alert triage, and clear incident reporting.</sub>
+    <sub> Threat hunting and security operations labs focused on log analysis, alert triage, and clear incident reporting.</sub>
   </summary>
 
 - **[Excel Mini SIEM (In Progress)](./docs/excel-siem-lab.md)**

@@ -48,7 +48,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 <details open>
   <summary><b>⚠️ Vulnerability Management Projects</b></summary>
 
-- **[Vulnerability Management Program Implementation](https://github.com/DannyInTheShell/vulnerability-management-program)**
+- **[Vulnerability Management Program Implementation](https://github.com/DannyInTheShell/vulnerability-management-program/blob/main/README.md)**
 - **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
 </details>
 

@@ -5,13 +5,27 @@
   <!-- Cyberpunk header: black bg, dark blue text -->
   <h1 align="center">
     <img
-      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=42&duration=2100&pause=950&color=1E3A8A&center=true&vCenter=true&width=1200&height=90&background=000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+A+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+MINIMIZE+BLAST+RADIUS;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+A+COLOGERO+%7C+MINIMIZE+BLAST+RADIUS"
+      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=42&duration=2100&pause=950&color=0969DA&center=true&vCenter=true&width=1200&height=90&background=000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+A+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+MINIMIZE+BLAST+RADIUS;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+A+COLOGERO+%7C+MINIMIZE+BLAST+RADIUS"
       alt="Danny A Cologero — Cybersecurity header"
     />
   </h1>
 </div>
 
-# <a href="https://www.linkedin.com/in/d-a-c-136020286/">Danny A Cologero</a>'s IT and Cybersecurity Project Portfolio 🔐
+
+<h1 align="center">
+  <a href="https://www.linkedin.com/in/d-a-c-136020286/">
+    <img
+      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=44&duration=1200&pause=9999999&color=0A66C2&center=true&vCenter=true&width=700&height=70&background=00000000&lines=DANNY+A+COLOGERO"
+      alt="DANNY A COLOGERO — LinkedIn"
+    />
+  </a>
+</h1>
+
+
+<div align="center">
+  <h2>Cybersecurity &amp; IT Project Portfolio</h2>
+</div>
+
 
 Welcome to my project portfolio. Here you'll find hands-on security projects that demonstrate skills built through learning, experimentation, and real problem solving. I update projects regularly as I expand my expertise.
 
@@ -19,7 +33,7 @@ Welcome to my project portfolio. Here you'll find hands-on security projects tha
 
 I bring two decades of diverse work experience, a relentless curiosity, and a passion for creative problem solving. I thrive on tough challenges, dive in, learn fast, and ship repeatable solutions. Cybersecurity is where I feel most at home: protect, learn, adapt, and help people stay safe.
 
-*A little flavor:* Viking Jedi energy 🛡️⚔️ with a cape of technical expertise and a Kamado Joe for fuel and inspiration.
+> No theatrics. Just craft. Kamado Joe habits, applied to security.
 
 ### Experience highlights
 

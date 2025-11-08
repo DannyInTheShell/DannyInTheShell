@@ -60,7 +60,13 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 </details>
 
 <details>
-  <summary><b>🚨 Threat Hunting and Security Operations</b> <sub>(click to expand)</sub></summary>
+  <summary>
+    <b>🚨 Threat Hunting and Security Operations</b> <sub>(click to expand)</sub><br/>
+    <sub>> Threat hunting and security operations labs focused on log analysis, alert triage, and clear incident reporting.</sub>
+  </summary>
+
+- **[Excel Mini SIEM (In Progress)](./docs/excel-siem-lab.md)**
+  <br/><sub><i>Designing a lightweight SIEM-style workbook in Excel to ingest and normalize log data, pivot on patterns, and surface suspicious activity via rules, pivot tables, and conditional formatting.</i></sub>
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
   <br/><sub><i>Insert Discription</i></sub>

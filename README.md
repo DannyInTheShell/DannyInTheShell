@@ -99,7 +99,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Solves the SQL Murder Mystery case using text pattern searches, multi table joins across interview, person, license, gym, and event tables, and targeted filters on dates and attributes to identify the killer, Jeremy Bowers, and the wealthy mastermind who hired him.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Spotify%20Analytics">Spotify Analytics</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: playlist trends, popularity scoring, joins.</i></sub>
+  <br/><sub><i>Analyzes Kaggle based Spotify track data by modeling audio features in a relational table and using GROUP BY aggregates, CTEs, subqueries, and calculated fields to rank artists by popularity, danceability, and track length.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Superstore%20Database">Superstore Database</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: sales pipeline, margins, regional performance.</i></sub>

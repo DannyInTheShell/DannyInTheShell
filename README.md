@@ -82,6 +82,8 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Insert Discription</i></sub>
 - **[Incident Report: ICMP Flood and NIST CSF Playbook](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20ICMP%20Flood%20and%20NIST%20CSF%20Playbook.md)**
   <br/><sub><i>Insert Discription</i></sub>
+- **[Apply Filters to SQL Log Analysis](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/apply-filters-sql-log-analysis.pdf)**  
+  <sub><i>Uses SQL WHERE filtering with AND, OR, NOT, and LIKE against login and employee tables to investigate suspicious access activity.</i></sub>
 </details>
 
 <details>

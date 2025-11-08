@@ -57,6 +57,7 @@ Welcome to my project portfolio. Here you’ll find hands-on security projects d
 Take a look around! Feedback, collaboration, or discussion about opportunities is welcome. Let’s build something awesome together!
 
 [<img align="left" alt="d-a-c-136020286 | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="d-a-c-136020286 | LinkedIn" width="24" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" />][linkedin]
 
 
 [linkedin]: https://linkedin.com/in/d-a-c-136020286

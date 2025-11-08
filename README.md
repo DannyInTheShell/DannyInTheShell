@@ -1,6 +1,6 @@
 <!-- Matrix banner (local) + combined sequence (logical order) -->
 <div align="center">
-  <img src="./assets/matrix-banner.gif" width="100%" alt="Matrix digital rain" loading="lazy" />
+  <img src="./assets/Matrix_Digital_rain_banner.gif" width="100%" alt="Matrix digital rain" loading="lazy" />
   <img src="https://readme-typing-svg.demolab.com?font=OCR+A+Extended&size=38&duration=2100&pause=950&color=00E7FF&center=true&vCenter=true&width=1100&height=90&background=00000000&lines=SCANNING...;ENUMERATING+ASSETS...;OPERATOR%3A+DANNY+COLOGERO;CREDENTIALS%3A+VERIFIED;ACCESS+GRANTED;OBJECTIVE%3A+REDUCE+RISK;TACTICS%3A+PROTECT+%7C+LEARN+%7C+ADAPT;DANNY+COLOGERO+%7C+CYBERSECURITY" alt="Danny Cologero — Cybersecurity header" />
 </div>
 

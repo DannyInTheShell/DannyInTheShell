@@ -84,7 +84,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Analyzes a digital music store’s customers, artists, and sales agents using multi-table INNER JOINs, GROUP BY aggregates, and a ROW_NUMBER window function to surface top-selling artists, countries, and 2009 performance.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Customer%20%26%20Order%20Analytics">Customer &amp; Order Analytics</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: cohort analysis, retention, CLV with CTEs.</i></sub>
+  <br/><sub><i>Analyzes customer orders using JOINs, aggregate functions, and date/pattern filters to surface revenue, product performance, and high-value locations.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Famous%20People%20Project">Famous People Project</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: data cleaning, normalization, referential integrity.</i></sub>

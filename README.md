@@ -67,25 +67,33 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 </details>
 
 <details>
-  <summary><b>⚖️ GRC Audits and Compliance</b> <sub>(click to expand)</sub><br/>
-    <sub>Governance, risk, and compliance work focused on mapping real world environments to frameworks, assessing control gaps, and recommending practical remediation steps.</sub>
-  </summary>
-
-  <details>
   <summary>
-    <b>🔍 Security Technology &amp; Vendor Assessments</b> <sub>(click to expand)</sub><br/>
-    <sub>Evaluations of security products and platforms for architecture, controls, and operational fit.</sub>
+    <b>⚖️ GRC Audits and Compliance</b> <sub>(click to expand)</sub><br/>
+    <sub>Governance, risk, and compliance work focused on mapping real-world environments to frameworks, assessing control gaps, and recommending practical remediation steps.</sub>
   </summary>
 
-  - **[Security Technology Assessment: Verkada Camera Platform](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Verkada_Security_Technology_Assessment_Portfolio.pdf)**  
-    <br/><sub><i>Independent assessment of the Verkada camera platform reviewing architecture, security controls, compliance posture, and suitability for a remote monitoring program.</i></sub>
+  <br/>
 
+  <b>🔍 Security Technology &amp; Vendor Assessments</b><br/>
+  <sub>Evaluations of security products and platforms for architecture, controls, and operational fit.</sub>
+
+  <ul>
+    <li>
+      <b><a href="https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Verkada_Security_Technology_Assessment_Portfolio.pdf">Security Technology Assessment: Verkada Camera Platform</a></b><br/>
+      <sub><i>Independent assessment of the Verkada camera platform reviewing architecture, security controls, compliance posture, and suitability for a remote monitoring program.</i></sub>
+    </li>
+  </ul>
+
+  <b>📋 Framework Readiness Audits</b>
+
+  <ul>
+    <li>
+      <b><a href="https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md">PCI DSS and GDPR Readiness Audit</a></b><br/>
+      <sub><i>Performs a readiness assessment for a fictional e-commerce retailer, mapping PCI DSS and GDPR requirements to existing controls, identifying gaps, and recommending remediation steps.</i></sub>
+    </li>
+  </ul>
 </details>
 
-
-- **[PCI DSS and GDPR Readiness Audit](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
-  <br/><sub><i>Performs a readiness assessment for a fictional e-commerce retailer, mapping PCI DSS and GDPR requirements to existing controls, identifying gaps, and recommending remediation steps</i></sub>
-</details>
 
 <details>
   <summary>

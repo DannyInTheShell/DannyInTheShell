@@ -15,7 +15,7 @@
 <h1 align="center">
   <a href="https://www.linkedin.com/in/d-a-c-136020286/">
     <img
-      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=40&duration=1200&pause=9999999&color=0A66C2&center=true&vCenter=true&width=700&height=70&background=00000000&lines=DANNY+A+COLOGERO"
+      src="https://readme-typing-svg.demolab.com?font=Audiowide&size=40&duration=1200&pause=9999999&color=0969DA&center=true&vCenter=true&width=700&height=70&background=00000000&lines=DANNY+A+COLOGERO"
       alt="DANNY A COLOGERO — LinkedIn"
     />
   </a>

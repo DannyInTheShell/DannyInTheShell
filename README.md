@@ -87,7 +87,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Analyzes customer orders using JOINs, aggregate functions, and date/pattern filters to surface revenue, product performance, and high-value locations.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Famous%20People%20Project">Famous People Project</a>**
-  <br/><sub><i>Brief description (1–2 lines). Example: data cleaning, normalization, referential integrity.</i></sub>
+  <br/><sub><i>Models biographical and career data for public figures, then uses table creation, joins, calculated columns, and filters on status to compare net worth, yearly earnings, and estimated future returns.</i></sub>
 
 - **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Fortune%20500%20Project">Fortune 500 Project</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: ranking, percentiles, industry aggregates.</i></sub>

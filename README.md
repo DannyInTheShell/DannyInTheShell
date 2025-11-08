@@ -43,7 +43,8 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 - 🔐 Managing vulnerabilities with Tenable and hardening cloud infrastructure in Azure ☁️  
 - 🛡️ Physical security for events and individuals, keeping people and assets safe
 
-Welcome to my project portfolio. Here you’ll find hands-on security projects demonstrating skills I’ve built through learning, experimentation, and tackling complex challenges. Projects are updated regularly as I expand my expertise.
+---
+
 
 ## ⚠️ Vulnerability Management Projects
 

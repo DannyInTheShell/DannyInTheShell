@@ -54,27 +54,34 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <summary><b>⚠️ Vulnerability Management Projects</b> <sub>(click to expand)</sub></summary>
 
 - **[Vulnerability Management Program Implementation](https://github.com/DannyInTheShell/vulnerability-management-program/blob/main/README.md)**
+  <br/><sub><i>Insert Discription</i></sub>
 - **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
+  <br/><sub><i>Insert Discription</i></sub>
 </details>
 
 <details>
   <summary><b>🚨 Threat Hunting and Security Operations</b> <sub>(click to expand)</sub></summary>
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
+  <br/><sub><i>Insert Discription</i></sub>
 </details>
 
 <details>
   <summary><b>⚖️ GRC Audits and Compliance</b> <sub>(click to expand)</sub></summary>
 
 - **[PCI DSS and GDPR Readiness Audit](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/PCI%20DSS%20and%20GDPR%20Readiness%20Audit%20for%20Botium%20Toys.md)**
+  <br/><sub><i>Insert Discription</i></sub>
 </details>
 
 <details>
   <summary><b>🔵 Blue Team Investigations</b> <sub>(click to expand)</sub></summary>
 
 - **[Incident Report: Network Traffic Analysis of DNS Resolution Failure](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20Network%20Traffic%20Analysis%20of%20DNS%20Resolution%20Failure.md)**
+  <br/><sub><i>Insert Discription</i></sub>
 - **[Incident Report: TCP SYN Flood DoS](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20SYN%20Flood.md)**
+  <br/><sub><i>Insert Discription</i></sub>
 - **[Incident Report: ICMP Flood and NIST CSF Playbook](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Incident%20Report%3A%20ICMP%20Flood%20and%20NIST%20CSF%20Playbook.md)**
+  <br/><sub><i>Insert Discription</i></sub>
 </details>
 
 <details>

@@ -80,36 +80,34 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 <details>
   <summary><b>🗄️ SQL Projects</b> <sub>(click to expand)</sub></summary>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Chinook%20SQL%20Project">Chinook SQL Project</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Chinook%20SQL%20Project">Chinook SQL Project</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: music store schema, joins, window functions, KPIs.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Customer%20%26%20Order%20Analytics">Customer &amp; Order Analytics</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Customer%20%26%20Order%20Analytics">Customer &amp; Order Analytics</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: cohort analysis, retention, CLV with CTEs.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Famous%20People%20Project">Famous People Project</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Famous%20People%20Project">Famous People Project</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: data cleaning, normalization, referential integrity.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Fortune%20500%20Project">Fortune 500 Project</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Fortune%20500%20Project">Fortune 500 Project</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: ranking, percentiles, industry aggregates.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Netflix%20Analysis%20Project%20(PostgreSQL)">Netflix Analysis Project (PostgreSQL)</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Netflix%20Analysis%20Project%20(PostgreSQL)">Netflix Analysis Project (PostgreSQL)</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: content mix, time series, window functions.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/SQL%20Murder%20Mystery%20Solved">SQL Murder Mystery Solved</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/SQL%20Murder%20Mystery%20Solved">SQL Murder Mystery Solved</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: investigative querying, stepwise evidence queries.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Spotify%20Analytics">Spotify Analytics</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Spotify%20Analytics">Spotify Analytics</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: playlist trends, popularity scoring, joins.</i></sub>
 
-- <a href="https://github.com/DannyInTheShell/SQL/tree/main/Superstore%20Database">Superstore Database</a>
+- **<a href="https://github.com/DannyInTheShell/SQL/tree/main/Superstore%20Database">Superstore Database</a>**
   <br/><sub><i>Brief description (1–2 lines). Example: sales pipeline, margins, regional performance.</i></sub>
 
 <br/>
 
 🔎 <a href="https://github.com/DannyInTheShell/SQL/search?q=extension%3Asql&type=code">Browse all .sql files</a>
 </details>
-
-
 
 
 <hr/>

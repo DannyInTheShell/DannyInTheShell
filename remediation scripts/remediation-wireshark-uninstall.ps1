@@ -3,7 +3,7 @@
 # Type and run exactly this (with the space between the two dots): . .\remediation-wireshark-uninstall.ps1"
 
 <#
-.SYNOPSIS
+.SYNOPSIS remediation-wireshark-uninstall.ps1
 Uninstalls any installed version of Wireshark from the system executing the script.
 
 .DESCRIPTION

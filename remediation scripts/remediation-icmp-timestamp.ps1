@@ -1,19 +1,15 @@
 <#
 .SYNOPSIS
-  Blocks or removes ICMP Timestamp Request (Type 13) and Timestamp Reply (Type 14) on Windows Server 2019 or Windows 11.
+  Blocks (secure) or removes (insecure) ICMP Timestamp Request (Type 13) and Timestamp Reply (Type 14)
+  on Windows Server 2019 or Windows 11 using Windows Advanced Firewall.
 
 .DESCRIPTION
-  This script remediates the “ICMP Timestamp Request Remote Date Disclosure” vulnerability (Plugin ID 10114)
-  by blocking inbound and outbound ICMP messages of types 13 and 14 using Windows Advanced Firewall.
+  Remediates the “ICMP Timestamp Request Remote Date Disclosure” vulnerability (Plugin ID 10114)
+  by blocking inbound ICMP type 13 and outbound ICMP type 14 using Windows Advanced Firewall. Toggle behavior with $secureEnvironment.
 
-  It creates two firewall rules:
-   - Block inbound ICMP Type 13 (Timestamp Request)
-   - Block outbound ICMP Type 14 (Timestamp Reply)
-
-  The rules persist across reboots. Use the -Revert switch to remove them.
-
-.PARAMETER Revert
-  Optional switch. If specified, the script will remove the ICMP Timestamp firewall rules instead of applying them.
+.TOGGLE
+  $secureEnvironment = $true   # SECURE: create rules (block 13 inbound, 14 outbound)
+  $secureEnvironment = $false  # INSECURE: remove those rules
 
 .AUTHOR
   Danny Cologero
@@ -22,40 +18,40 @@
   10-15-2025
 
 .VERSION
-  1.3 (Windows 11 compatible)
+  1.5 
 
 .HOW TO USE
-1. Open PowerShell as Administrator.
-2. Navigate to the folder containing this script:
-     cd "C:\Users\danny\Desktop"
-3. To apply the remediation (block ICMP timestamp):
+1) Open PowerShell as Administrator.
+2) Set the toggle at the top of this script:
+     $secureEnvironment = $true   # secure (apply)
+     $secureEnvironment = $false  # insecure (remove)
+3) Run:
      .\remediation-icmp-timestamp.ps1
-4. To remove the rules (revert):
-     .\remediation-icmp-timestamp.ps1 -Revert
 
 .VERIFICATION
-1. Check applied rules in PowerShell:
-     Get-NetFirewallRule | findstr Timestamp
-2. Confirm the rules block traffic from another host:
-     nmap -sO -p 13,14 <server-ip>
-      Note: You may get error if FW or NSG is blocking Ping: "Host seems down. If it is really up, but blocking our ping probes, try -Pn"
-      nmap -sO -Pn -p 13,14 <host-ip>
-3. Rules persist across reboots; check again after restart.
+  PowerShell:
+   1. Check applied rules in PowerShell:
+     	Get-NetFirewallRule | findstr Timestamp
+   2. Confirm the rules block traffic from another host:
+      	nmap -sO -p 13,14 <server-ip>
+     	 Note: You may get error if FW or NSG is blocking Ping: "Host seems down. If it is really up, but blocking our ping probes, try -Pn"
+      	  nmap -sO -Pn -p 13,14 <host-ip>
+   3. Rules persist across reboots; check again after restart.
 
 .NOTES
   Requires: Windows Server 2019 Datacenter (Build 1809) or Windows 11, PowerShell 5.1+
-  Administrative privileges required to run.
+  Administrative privileges required.
 #>
 
-param(
-    [switch]$Revert
-)
+# -------------------------------
+# Toggle (secure vs insecure)
+# -------------------------------
+$secureEnvironment = $true
 
 # ----------------------------------------
-# Ensure script can run in Windows 11 session
+# Allow script in this session if restricted
 # ----------------------------------------
 if ($PSVersionTable.PSVersion.Major -ge 5) {
-    # Temporarily allow script execution in this session if restricted
     if ((Get-ExecutionPolicy) -eq "Restricted") {
         Set-ExecutionPolicy RemoteSigned -Scope Process -Force
     }
@@ -72,104 +68,144 @@ $logFile = "$logFolder\ICMP_Remediation_$(Get-Date -Format 'yyyyMMdd_HHmmss').lo
 
 function Log ($msg) {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    $entry = "[$timestamp] $msg"
-    Add-Content -Path $logFile -Value $entry
+    Add-Content -Path $logFile -Value "[$timestamp] $msg"
 }
 
 # ----------------------------------------
-# Console Helpers
+# Console Helpers (mirror to log)
 # ----------------------------------------
-function Info ($msg)  { Write-Host "[INFO]  $msg" -ForegroundColor Cyan }
-function Warn ($msg)  { Write-Host "[WARN]  $msg" -ForegroundColor Yellow }
-function ErrorExit ($msg) { Write-Host "[ERROR] $msg" -ForegroundColor Red; exit 1 }
+function Info ($msg)      { Write-Host "[INFO]  $msg" -ForegroundColor Cyan;   Log $msg }
+function Warn ($msg)      { Write-Host "[WARN]  $msg" -ForegroundColor Yellow; Log $msg }
+function PassMsg ($msg)   { Write-Host "[PASS]  $msg" -ForegroundColor Green;  Log "PASS: $msg" }
+function FailMsg ($msg)   { Write-Host "[FAIL]  $msg" -ForegroundColor Red;    Log "FAIL: $msg" }
+function ErrorExit ($msg) { Write-Host "[ERROR] $msg" -ForegroundColor Red;    Log "ERROR: $msg"; exit 1 }
 
-# Requires administrative privileges
-if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
+# ----------------------------------------
+# Admin check
+# ----------------------------------------
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole] "Administrator")) {
-    Write-Host "[ERROR] Please run this script as Administrator." -ForegroundColor Red
-    Log "ERROR: Script attempted to run without administrative privileges."
-    exit 1
+    ErrorExit "Please run this script as Administrator."
 }
 
 # Rule names
 $ruleInName  = "Block ICMP Timestamp Request (Type 13) - Inbound"
 $ruleOutName = "Block ICMP Timestamp Reply (Type 14) - Outbound"
 
-if ($Revert) {
-    Info "Reverting ICMP Timestamp firewall rules..."
-    Log "Revert operation started."
-
-    if (Get-NetFirewallRule -DisplayName $ruleInName -ErrorAction SilentlyContinue) {
-        Info "Removing inbound rule..."
-        Log "Removing inbound rule: $ruleInName"
-        Remove-NetFirewallRule -DisplayName $ruleInName
-    } else {
-        Warn "Inbound rule not found; nothing to remove."
-        Log "Inbound rule not found; no action taken."
-    }
-
-    if (Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue) {
-        Info "Removing outbound rule..."
-        Log "Removing outbound rule: $ruleOutName"
-        Remove-NetFirewallRule -DisplayName $ruleOutName
-    } else {
-        Warn "Outbound rule not found; nothing to remove."
-        Log "Outbound rule not found; no action taken."
-    }
-
-    Info "Revert complete."
-    Log "Revert operation finished."
-    exit 0
-}
-
-# Normal remediation path
-Info "Starting ICMP Timestamp remediation..."
-Log "Apply operation started."
-
-# Remove existing rules first (idempotent)
+# ----------------------------------------
+# Idempotently remove existing rules (both paths do this first)
+# ----------------------------------------
 if (Get-NetFirewallRule -DisplayName $ruleInName -ErrorAction SilentlyContinue) {
     Info "Existing inbound rule found; removing old rule."
-    Log "Removing existing inbound rule: $ruleInName"
     Remove-NetFirewallRule -DisplayName $ruleInName
 }
 if (Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue) {
     Info "Existing outbound rule found; removing old rule."
-    Log "Removing existing outbound rule: $ruleOutName"
     Remove-NetFirewallRule -DisplayName $ruleOutName
 }
 
-# Create inbound rule for ICMP type 13 (timestamp-request)
-Info "Creating inbound rule to block ICMP type 13 (Timestamp Request)..."
-Log "Creating inbound firewall rule: $ruleInName"
-New-NetFirewallRule -DisplayName $ruleInName `
-    -Direction Inbound `
-    -Protocol ICMPv4 `
-    -IcmpType 13 `
-    -Action Block `
-    -Profile Any `
-    -Description "Blocks ICMP Timestamp Request (type 13) to prevent remote system clock disclosure."
+if ($secureEnvironment) {
+    # --------------------------
+    # SECURE: Create rules
+    # --------------------------
+    Info "Starting ICMP Timestamp remediation (SECURE mode)..."
+    Log "Apply operation started."
 
-# Create outbound rule for ICMP type 14 (timestamp-reply)
-Info "Creating outbound rule to block ICMP type 14 (Timestamp Reply)..."
-Log "Creating outbound firewall rule: $ruleOutName"
-New-NetFirewallRule -DisplayName $ruleOutName `
-    -Direction Outbound `
-    -Protocol ICMPv4 `
-    -IcmpType 14 `
-    -Action Block `
-    -Profile Any `
-    -Description "Blocks ICMP Timestamp Reply (type 14) to prevent remote system clock disclosure."
+    # Inbound ICMP type 13
+    Info "Creating inbound rule to block ICMP type 13 (Timestamp Request)..."
+    New-NetFirewallRule -DisplayName $ruleInName `
+        -Direction Inbound `
+        -Protocol ICMPv4 `
+        -IcmpType 13 `
+        -Action Block `
+        -Profile Any `
+        -Description "Blocks ICMP Timestamp Request (type 13) to prevent remote system clock disclosure." `
+        | Out-Null
 
-# Confirm rule creation
-Info "Confirming applied rules..."
-Log "Firewall rules created; confirming:"
-Get-NetFirewallRule -DisplayName "*Timestamp*" | Format-Table -AutoSize -Property DisplayName, Direction, Action, Enabled | ForEach-Object { Log $_ }
+    # Outbound ICMP type 14
+    Info "Creating outbound rule to block ICMP type 14 (Timestamp Reply)..."
+    New-NetFirewallRule -DisplayName $ruleOutName `
+        -Direction Outbound `
+        -Protocol ICMPv4 `
+        -IcmpType 14 `
+        -Action Block `
+        -Profile Any `
+        -Description "Blocks ICMP Timestamp Reply (type 14) to prevent remote system clock disclosure." `
+        | Out-Null
 
-Info "Remediation complete. ICMP Timestamp Requests/Replies are now blocked."
-Log "Apply operation finished."
+    # Snapshot to log
+    $confirm = Get-NetFirewallRule -DisplayName "*Timestamp*" |
+               Select-Object DisplayName, Direction, Action, Enabled |
+               Out-String
+    Log "Rule snapshot:`n$confirm"
 
-Write-Host "`nTo verify:" -ForegroundColor Cyan
-Write-Host "  1. Run: 'Get-NetFirewallRule | findstr Timestamp'"
-Write-Host "  2. From another host, run: 'nmap -sO -p 13,14 <your-server-ip>' (should show filtered)"
-Write-Host "  3. Rules persist automatically across reboots."
-Write-Host "`nTo remove rules, run: '.\remediation-icmp-timestamp.ps1 -Revert'"
+    # Verify
+    $rIn  = Get-NetFirewallRule -DisplayName $ruleInName  -ErrorAction SilentlyContinue
+    $rOut = Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue
+
+    $passIn  = $false
+    $passOut = $false
+
+    if ($rIn -and $rIn.Enabled -eq "True" -and $rIn.Action -eq "Block" -and $rIn.Direction -eq "Inbound") {
+        $icmpIn = Get-NetFirewallRule -DisplayName $ruleInName | Get-NetFirewallICMPSetting -ErrorAction SilentlyContinue
+        if ($icmpIn -and ($icmpIn.IcmpType -contains 13)) { $passIn = $true }
+    }
+    if ($rOut -and $rOut.Enabled -eq "True" -and $rOut.Action -eq "Block" -and $rOut.Direction -eq "Outbound") {
+        $icmpOut = Get-NetFirewallRule -DisplayName $ruleOutName | Get-NetFirewallICMPSetting -ErrorAction SilentlyContinue
+        if ($icmpOut -and ($icmpOut.IcmpType -contains 14)) { $passOut = $true }
+    }
+
+    Write-Host ""
+    Write-Host "==== Verification Summary (Apply) ====" -ForegroundColor Cyan
+    if ($passIn)  { PassMsg "Inbound rule present, enabled, Block, Direction=Inbound, IcmpType=13." } else { FailMsg "Inbound rule verification failed." }
+    if ($passOut) { PassMsg "Outbound rule present, enabled, Block, Direction=Outbound, IcmpType=14." } else { FailMsg "Outbound rule verification failed." }
+
+    $overall = $passIn -and $passOut
+    if ($overall) {
+        PassMsg "Overall: APPLY PASS"
+        Info "Remediation complete. ICMP Timestamp Requests/Replies are now blocked."
+        Info "Log saved: $logFile"
+        exit 0
+    } else {
+        FailMsg "Overall: APPLY FAIL"
+        Warn "Remediation attempted but verification failed. Review the log."
+        Info "Log saved: $logFile"
+        exit 1
+    }
+}
+else {
+    # --------------------------
+    # INSECURE: Remove rules
+    # --------------------------
+    Info "Removing ICMP Timestamp firewall rules (INSECURE mode)..."
+    Log "Revert operation started."
+
+    # After pre-removal above, ensure none remain (idempotent)
+    $rIn  = Get-NetFirewallRule -DisplayName $ruleInName  -ErrorAction SilentlyContinue
+    $rOut = Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue
+    if ($rIn)  { Remove-NetFirewallRule -DisplayName $ruleInName }
+    if ($rOut) { Remove-NetFirewallRule -DisplayName $ruleOutName }
+
+    # Verify removed
+    $rIn2  = Get-NetFirewallRule -DisplayName $ruleInName  -ErrorAction SilentlyContinue
+    $rOut2 = Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue
+
+    Write-Host ""
+    Write-Host "==== Verification Summary (Revert) ====" -ForegroundColor Cyan
+    if (-not $rIn2)  { PassMsg "Inbound rule removed." }  else { FailMsg "Inbound rule still present." }
+    if (-not $rOut2) { PassMsg "Outbound rule removed." } else { FailMsg "Outbound rule still present." }
+
+    $overall = (-not $rIn2) -and (-not $rOut2)
+    if ($overall) {
+        PassMsg "Overall: REVERT PASS"
+        Info "Rules removed. Log saved: $logFile"
+        exit 0
+    } else {
+        FailMsg "Overall: REVERT FAIL"
+        Warn "Revert attempted but verification failed. Review the log."
+        Info "Log saved: $logFile"
+        exit 1
+    }
+}
+
+# End of script

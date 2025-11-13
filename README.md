@@ -59,7 +59,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 - **[Vulnerability Management Program Implementation](https://github.com/DannyInTheShell/vulnerability-management-program/blob/main/README.md)**
   <br/><sub><i>End-to-end vulnerability management program simulating a 200-server Azure environment using Tenable for authenticated scanning, risk-based prioritization, and scripted remediation, from policy design and stakeholder buy-in through execution, informed by NIST SP 800-53 (RA-5, SI-2, CM-6/CM-7), NIST CSF 2.0 (Identify, Protect, Detect, Govern), and ISO/IEC 27001 A.8.8.</i></sub>
 - **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
-  <br/><sub><i>Insert Discription</i></sub>
+  <br/><sub><i>In Progress</i></sub>
 </details>
 
 <details>
@@ -72,7 +72,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Designing a lightweight SIEM-style workbook in Excel to ingest and normalize log data, pivot on patterns, and surface suspicious activity via rules, pivot tables, and conditional formatting.</i></sub>
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
-  <br/><sub><i>Insert Discription</i></sub>
+  <br/><sub><i>In Progress</i></sub>
 </details>
 
 <details>

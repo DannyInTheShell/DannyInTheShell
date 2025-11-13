@@ -5,7 +5,7 @@
 
 .DESCRIPTION
   Remediates the “ICMP Timestamp Request Remote Date Disclosure” vulnerability (Plugin ID 10114)
-  by blocking inbound ICMP type 13 and outbound ICMP type 14 using Windows Advanced Firewall. Toggle behavior with $secureEnvironment.
+  by blocking inbound ICMP type 13 and outbound ICMP type 14. Toggle behavior with $secureEnvironment.
 
 .TOGGLE
   $secureEnvironment = $true   # SECURE: create rules (block 13 inbound, 14 outbound)
@@ -18,7 +18,7 @@
   10-15-2025
 
 .VERSION
-  1.5 
+  1.6
 
 .HOW TO USE
 1) Open PowerShell as Administrator.
@@ -29,18 +29,32 @@
      .\remediation-icmp-timestamp.ps1
 
 .VERIFICATION
-  PowerShell:
-   1. Check applied rules in PowerShell:
-     	Get-NetFirewallRule | findstr Timestamp
-   2. Confirm the rules block traffic from another host:
-      	nmap -sO -p 13,14 <server-ip>
-     	 Note: You may get error if FW or NSG is blocking Ping: "Host seems down. If it is really up, but blocking our ping probes, try -Pn"
-      	  nmap -sO -Pn -p 13,14 <host-ip>
-   3. Rules persist across reboots; check again after restart.
+  On the target (PowerShell):
+    Get-NetFirewallRule -DisplayName "*Timestamp*" | ft DisplayName,Direction,Action,Enabled
 
-.NOTES
-  Requires: Windows Server 2019 Datacenter (Build 1809) or Windows 11, PowerShell 5.1+
-  Administrative privileges required.
+  From another Windows host (PowerShell):
+    & "C:\Program Files (x86)\Nmap\nping.exe" --icmp --icmp-type 13 -c 3 <server-ip>
+    # Expected when blocked: SENT 3, RCVD 0
+
+  Notes:
+    - Rules persist across reboots. Re-check after restarting the target.
+    - If nping is in PATH you can run:
+        nping --icmp --icmp-type 13 -c 3 <server-ip>
+      In Command Prompt (cmd.exe) omit the leading &.
+
+  Troubleshooting nping
+    If you see "Cannot determine Next Hop MAC address":
+      1) Run PowerShell as Administrator
+      2) Ensure Npcap is running:
+           Get-Service npcap
+      3) Send at IP layer:
+           & "C:\Program Files (x86)\Nmap\nping.exe" --icmp --icmp-type 13 -c 3 --send-ip <server-ip>
+      4) If multiple adapters, pick one:
+           Get-NetAdapter | Where-Object Status -eq Up | Select Name, InterfaceDescription
+           & "C:\Program Files (x86)\Nmap\nping.exe" -e "Ethernet" --icmp --icmp-type 13 -c 3 --send-ip <server-ip>
+      5) Fallback check using Nmap NSE:
+           & "C:\Program Files (x86)\Nmap\nmap.exe" -Pn -sn --script=icmp-timestamp <server-ip>
+
 #>
 
 # -------------------------------
@@ -93,6 +107,32 @@ $ruleInName  = "Block ICMP Timestamp Request (Type 13) - Inbound"
 $ruleOutName = "Block ICMP Timestamp Reply (Type 14) - Outbound"
 
 # ----------------------------------------
+# Helper: read ICMP types via COM (INetFwPolicy2 / INetFwRule3)
+# Returns $true if the rule’s IcmpTypesAndCodes string includes "<Type>:"
+# ----------------------------------------
+function Test-RuleIcmpType {
+    param(
+        [Parameter(Mandatory=$true)][string]$DisplayName,
+        [Parameter(Mandatory=$true)][int]$Type
+    )
+    try {
+        $fw = New-Object -ComObject HNetCfg.FwPolicy2
+        foreach ($rule in $fw.Rules) {
+            if ($rule.Name -eq $DisplayName) {
+                $s = [string]$rule.IcmpTypesAndCodes
+                if ([string]::IsNullOrWhiteSpace($s)) { return $false }
+                # Typical format: "13:*,8:*" etc
+                if ($s -match "(^|,)\s*$Type\s*:") { return $true }
+                return $false
+            }
+        }
+        return $false
+    } catch {
+        return $false
+    }
+}
+
+# ----------------------------------------
 # Idempotently remove existing rules (both paths do this first)
 # ----------------------------------------
 if (Get-NetFirewallRule -DisplayName $ruleInName -ErrorAction SilentlyContinue) {
@@ -109,7 +149,6 @@ if ($secureEnvironment) {
     # SECURE: Create rules
     # --------------------------
     Info "Starting ICMP Timestamp remediation (SECURE mode)..."
-    Log "Apply operation started."
 
     # Inbound ICMP type 13
     Info "Creating inbound rule to block ICMP type 13 (Timestamp Request)..."
@@ -139,20 +178,20 @@ if ($secureEnvironment) {
                Out-String
     Log "Rule snapshot:`n$confirm"
 
-    # Verify
+    # Verify (without Get-NetFirewallICMPSetting)
     $rIn  = Get-NetFirewallRule -DisplayName $ruleInName  -ErrorAction SilentlyContinue
     $rOut = Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue
 
     $passIn  = $false
     $passOut = $false
 
-    if ($rIn -and $rIn.Enabled -eq "True" -and $rIn.Action -eq "Block" -and $rIn.Direction -eq "Inbound") {
-        $icmpIn = Get-NetFirewallRule -DisplayName $ruleInName | Get-NetFirewallICMPSetting -ErrorAction SilentlyContinue
-        if ($icmpIn -and ($icmpIn.IcmpType -contains 13)) { $passIn = $true }
+    if ($rIn -and $rIn.Enabled -eq "True" -and $rIn.Action -eq "Block" -and $rIn.Direction -eq "Inbound" `
+        -and (Test-RuleIcmpType -DisplayName $ruleInName -Type 13)) {
+        $passIn = $true
     }
-    if ($rOut -and $rOut.Enabled -eq "True" -and $rOut.Action -eq "Block" -and $rOut.Direction -eq "Outbound") {
-        $icmpOut = Get-NetFirewallRule -DisplayName $ruleOutName | Get-NetFirewallICMPSetting -ErrorAction SilentlyContinue
-        if ($icmpOut -and ($icmpOut.IcmpType -contains 14)) { $passOut = $true }
+    if ($rOut -and $rOut.Enabled -eq "True" -and $rOut.Action -eq "Block" -and $rOut.Direction -eq "Outbound" `
+        -and (Test-RuleIcmpType -DisplayName $ruleOutName -Type 14)) {
+        $passOut = $true
     }
 
     Write-Host ""
@@ -178,9 +217,7 @@ else {
     # INSECURE: Remove rules
     # --------------------------
     Info "Removing ICMP Timestamp firewall rules (INSECURE mode)..."
-    Log "Revert operation started."
 
-    # After pre-removal above, ensure none remain (idempotent)
     $rIn  = Get-NetFirewallRule -DisplayName $ruleInName  -ErrorAction SilentlyContinue
     $rOut = Get-NetFirewallRule -DisplayName $ruleOutName -ErrorAction SilentlyContinue
     if ($rIn)  { Remove-NetFirewallRule -DisplayName $ruleInName }

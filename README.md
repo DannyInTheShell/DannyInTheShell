@@ -169,8 +169,11 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
     <sub>Evaluations of security products and platforms for architecture, controls, and operational fit.</sub>
   </summary>
 
-- **[Security Technology Assessment – Verkada Camera Platform](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Verkada_Security_Technology_Assessment_Portfolio.pdf)**
-  <br/><sub><i>Independent assessment of the Verkada camera platform reviewing architecture, security controls, compliance posture, and suitability for a remote monitoring program.</i></sub>
+- **[Security Technology Assessment – Verkada Security Cameras](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Verkada_Security_Technology_Assessment_Portfolio.pdf)**
+  <br/><sub><i>Independent assessment of the Verkada Security Cameras and platform reviewing architecture, security controls, compliance posture, and suitability for a remote monitoring program.</i></sub>
+
+- **[Security Technology Assessment – Camius Security Cameras](ADD LINK)**
+  <br/><sub><i>Independent assessment of the Camius Security Cameras...</i></sub>
 
 </details>
 

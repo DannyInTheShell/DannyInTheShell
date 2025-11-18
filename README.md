@@ -177,7 +177,6 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
 
 </details>
 
-
 <hr/>
 
 ## 🤳 Connect With Me

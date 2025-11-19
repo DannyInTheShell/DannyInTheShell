@@ -173,7 +173,7 @@ I bring two decades of diverse work experience, a relentless curiosity, and a pa
   <br/><sub><i>Independent assessment of the Verkada Security Cameras and platform reviewing architecture, security controls, compliance posture, and suitability for a remote monitoring program.</i></sub>
 
 - **[Security Technology Assessment – Camius Security Cameras](https://github.com/DannyInTheShell/DannyInTheShell/blob/main/docs/Camius_Security_Technology_Assessment_Portfolio.pdf)**
-  <br/><sub><i>Independent assessment of the Camius Security Cameras...</i></sub>
+  <br/><sub><i>Independent, end-to-end security, privacy, and TCO assessment of a Camius IP camera + NVR deployment replacing an outdated small business surveillance system.</i></sub>
 
 </details>
 
